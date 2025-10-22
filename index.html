@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marvel Studios</title>
+<link rel="stylesheet" href="style.css">
+<header>
+    <h1>Marvel Studios</h1>
+   <style>
+
+/* Reset geral */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+main {
+  padding-top: calc(4rem + 20px); /* 4rem do h1 + 20px do padding do header */
+}
+
+ /* Corpo da página */
+
+body {
+background-color: #0b0f14;
+color: white;
+font-family: 'Roboto', sans-serif;
+}
+h1 {
+color: #e62429;
+}
+
+/* Cabeçalho */
+ header{
+  background-color: #e62429; /* vermelho clássico Marvel */
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+ header h1 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+
+     header h2 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+
+
+     header h3 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+     header h4 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+     header h5 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+header h6 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+
+
+     /* Menu de navegação */
+    nav {
+      background-color: #111;
+      text-align: center;
+      padding: 5px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e62429;
+    }
+
+    /* Seção principal */
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+
+    main h2 {
+      color: #e62429;
+      margin-bottom: 20px;
+    }
+
+    /* Galeria de imagens */
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .galeria img {
+      width: 250px;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(230,36,41,0.6);
+    }
+
+    /* Rodapé */
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 15px;
+      color: #888;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    p {
+  margin-bottom: 20px; /* aumenta o espaço abaixo de cada parágrafo */
+}
+
+
+hr {
+  border: none;           /* remove a borda padrão */
+  height: 2px;            /* define a altura */
+  background-color: #e62429; /* cor da linha */
+  margin: 20px 0;         /* espaço acima e abaixo */
+}
+
+
+li{
+
+color: #faf8f8;
+
+}
+
+.postit-container {
+  display: flex;       /* organiza os “post-its” em linha */
+  gap: 30px;           /* espaço entre eles */
+  flex-wrap: wrap;     /* quebra linha se não couber na tela */
+  margin: 20px 0;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente (se tiver altura definida) */
+}
+
+.postit {
+  display: inline-block;
+  background-color: #fffa65;  /* cor tipo post-it amarelo */
+  color: #000;
+  padding: 15px 20px;
+  font-weight: bold;
+  text-decoration: none;      /* remove underline do link */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); /* sombra tipo post-it colado */
+  border-radius: 5px;
+  transform: rotate(-2deg);   /* deixa levemente inclinado, estilo post-it real */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.postit:hover {
+  transform: rotate(0deg) scale(1.05); /* animação ao passar o mouse */
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+}
+
+
+.botoes-sites {
+  display: flex;
+  justify-content: center;   /* centraliza os botões */
+  flex-wrap: wrap;           /* permite quebrar linha se a tela for pequena */
+  gap: 15px;                 /* espaço entre os botões */
+  margin: 30px 0;
+}
+
+.botao {
+  background-color: #000000; /* vermelho Marvel */
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.botao:hover {
+  background-color: #000000; /* tom mais escuro ao passar o mouse */
+  transform: scale(1.05);
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Marvel Studios</h1>
+
+  </header>
+
+<div class="botoes-sites">
+  <a href="https://www.marvel.com" target="_blank" class="botao">Inicio</a>
+  <a href="https://www.disneyplus.com" target="_blank" class="botao">Filmes</a>
+  <a href="https://www.omelete.com.br" target="_blank" class="botao">Séries</a>
+  <a href="https://www.imdb.com" target="_blank" class="botao">Personagens</a>
+  <a href="https://www.instagram.com/marvel" target="_blank" class="botao">Instagram Marvel</a>
+</div>
+
+
+
+
+
+  <main>
+    <h2>Bem-vindo ao Universo Marvel</h2>
+    <p>Explore heróis, vilões e histórias que marcaram gerações.</p>
+
+    <div class="galeria">
+      <img src="images.jpeg" alt="Homem de Ferro" width="100" height="150">
+      <img src="download (1).jpeg"Capitão América width="100" height="150">
+      <img src="download (3).jpeg" alt="Thor"width="100" height="150">
+    </div>
+  </main>
+
+  <footer>
+
+   </style>
+   
+
+<div class="postit-container">
+  <a href="https://www.youtube.com/@einerdtv" class="postit">Ei Nerd!</a>
+  <a href="https://www.linkedin.com/in/vit%C3%B3ria-maria-borges-4a393a240/" class="postit">Desenvolvedora</a>
+  <a href="pagina3.html" class="postit">+informações</a>
+</div>
+
+
+    <h3>Sejam bem vindos ao Universo da Marvel</h3>
+
+      <p class="data"><em>Blog iniciado 20/10/2025</em> </p>
+
+
+    <p>"Marvel" significa maravilha ou prodígio em inglês, algo que causa admiração e espanto.</p> 
+    <p>O nome é usado para a famosa editora de quadrinhos e estúdio de cinema, Marvel Comics, pois o termo transmite uma sensação de algo extraordinário e surpreendente. </p>
+
+      <img src="Marvel_Logo.svg.png" width="250" height="200">
+
+      <hr>
+
+      <h4>O Tio que Começou Tudo!</h4>
+
+      <img src="WhatsApp Image 2025-10-20 at 10.15.07.jpeg" width="350" height="350" >
+
+      <p>Você já parou pra pensar em quem criou a Marvel? Tipo, não os heróis, mas a empresa mesmo? Então deixa eu te apresentar um nome que pouca gente conhece, mas que foi ESSENCIAL pra tudo isso existir: Martin Goodman.</p>
+      <p>Martin Goodman era um empresário que curtia publicar revistas daquelas bem antigas, tipo histórias de faroeste, terror e ficção científica. Mas em 1939, ele decidiu tentar algo novo e lançou uma revistinha chamada Marvel Comics #1</p>
+      <p>E adivinha? Deu super certo! Foi aí que surgiram os primeiros heróis, como o Tocha Humana original e o Namor.</p>
+
+<img src="Huey_dewey_louie.webp" width="350" height="350" alt="" > <img src="19827913c32bbae0813f7dc27eff7284.jpg"   width=350 height="350">
+
+<hr>
+
+<h5> Stan Lee: O Herói por Trás dos Heróis</h5>
+
+<img src="download (4).jpeg" alt="foto Stan Lee">
+
+<p>Você já ouviu falar do Stan Lee, né? Mesmo que não lembre o nome, com certeza conhece as criações dele! Stan Lee foi o gênio por trás do Universo Marvel, um roteirista, editor e produtor que transformou o mundo dos quadrinhos  e mais tarde, o cinema  em algo realmente extraordinário.
+
+Nascido em Nova York, em 1922, Stanley Martin Lieber (esse era o nome completo dele!) começou a trabalhar bem jovem na empresa que, mais tarde, se tornaria a Marvel Comics. No início, fazia de tudo um pouco: revisava textos, enchia tinteiros e até escrevia pequenas histórias.
+
+Mas foi nos anos 1960 que o mundo mudou! Junto com artistas como Jack Kirby e Steve Ditko, Stan criou Homem-Aranha, Quarteto Fantástico, X-Men, Hulk, Thor, Pantera Negra, Homem de Ferro e muitos outros heróis lendários.
+
+O mais legal é que ele não fazia heróis perfeitos — eles tinham dúvidas, problemas e sentimentos humanos. E é isso que fez tanta gente se identificar com eles.
+
+Mesmo depois de décadas, Stan Lee continuou aparecendo nos filmes da Marvel com participações especiais (os famosos cameos) que todo fã adorava procurar nas telonas.
+
+Stan Lee faleceu em 2018, mas sua criatividade e seu legado continuam vivos. Ele nos mostrou que qualquer pessoa pode ser herói — basta ter coragem e um bom coração. </p>
+
+<hr>
+
+<h6>Stan Lee e Martin Goodman: A Dupla que Mudou o Mundo dos Heróis</h6>
+
+<img src="Gemini_Generated_Image_exmg6rexmg6rexmg.png" width="350" height="350" alt="" alt="quadrinho foto Stan lee e Martin Goodman">
+
+<p>Depois que Martin Goodman criou a base da Marvel lá nos anos 1930, ele talvez nem imaginasse que um jovem sobrinho iria transformar aquela pequena editora de revistas em um império de heróis. Esse sobrinho era ninguém menos que Stan Lee — o futuro rosto da Marvel Comics.
+
+Stan começou a trabalhar com Goodman quando ainda era adolescente. Ele fazia tarefas simples, como revisar textos e buscar café, mas sempre teve uma imaginação fora do comum. Martin percebeu isso e deu a Stan uma chance de escrever pequenas histórias. Foi o início de uma parceria que mudaria a cultura pop para sempre.
+
+Nos anos 1960, a Marvel precisava se reinventar. O público queria algo novo, e foi aí que Stan Lee teve a grande ideia: criar heróis que fossem humanos de verdade cheios de dúvidas, erros e sentimentos. Martin Goodman, sempre de olho nas oportunidades, apoiou o projeto e deu luz verde para o nascimento do Quarteto Fantástico, o primeiro sucesso dessa nova era.
+
+Depois vieram Homem-Aranha, Hulk, Thor, X-Men, Homem de Ferro e muitos outros. Enquanto Goodman era o homem de negócios que mantinha a editora viva, Stan Lee se tornava a alma criativa da Marvel, aproximando os leitores dos personagens como nunca antes.
+
+A relação entre os dois nem sempre foi fácil — Martin era o empresário prático, e Stan o sonhador idealista. Mas foi exatamente essa mistura que fez a Marvel crescer. Goodman deu o impulso, e Stan Lee deu o coração. 
+
+Hoje, o legado dos dois vive em cada herói que conhecemos. Martin Goodman construiu o alicerce; Stan Lee acendeu a chama. Juntos, eles criaram o universo que inspira gerações até hoje. </p>
+
+<footer>
+    <p>&copy; 2025 Meu Blog. Todos os direitos reservados.</p>
+  </footer>
+
+  </header>
+
+  <main>
+    
+      
+
+  </main>
+
+
+</body>
+</html>
